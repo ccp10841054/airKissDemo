@@ -1,0 +1,6 @@
+framework module iOS_LarkAirKiss_Public {
+  umbrella header "iOS_LarkAirKiss_Public.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_AirKissDemo {
+  umbrella header "Pods-AirKissDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
