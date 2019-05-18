@@ -134,7 +134,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7TL-SS-s2j">
-                                <rect key="frame" x="20" y="462" width="374" height="254"/>
+                                <rect key="frame" x="20" y="526" width="374" height="190"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -146,6 +146,20 @@
                                 <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHm-xp-fxY">
+                                <rect key="frame" x="20" y="462" width="374" height="44"/>
+                                <color key="backgroundColor" red="0.30196078430000001" green="0.75686274509999996" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="TCT-sc-wHC"/>
+                                </constraints>
+                                <state key="normal" title="stop AirKiss">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="startAirKissButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9hq-bz-F6j"/>
+                                    <action selector="stopAirKiss:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3rw-7h-iad"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -155,6 +169,7 @@
                             <constraint firstItem="zg7-iu-dsa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="8vu-SP-kXQ"/>
                             <constraint firstItem="yte-ei-IMu" firstAttribute="centerY" secondItem="1EK-le-1AY" secondAttribute="centerY" id="9HC-sg-PsI"/>
                             <constraint firstItem="gcY-Dj-1Wj" firstAttribute="top" secondItem="7TL-SS-s2j" secondAttribute="bottom" constant="20" id="ATb-UL-9ks"/>
+                            <constraint firstItem="7TL-SS-s2j" firstAttribute="top" secondItem="YHm-xp-fxY" secondAttribute="bottom" constant="20" id="C5r-HF-su2"/>
                             <constraint firstItem="nzj-uG-IUg" firstAttribute="leading" secondItem="J1f-ht-nRp" secondAttribute="trailing" constant="10" id="IQ8-ZP-YTX"/>
                             <constraint firstAttribute="trailingMargin" secondItem="nzj-uG-IUg" secondAttribute="trailing" constant="20" id="JTn-e3-eOg"/>
                             <constraint firstItem="7TL-SS-s2j" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Jt6-0w-7GR"/>
@@ -164,14 +179,16 @@
                             <constraint firstItem="CPQ-Ps-rkH" firstAttribute="leading" secondItem="pXN-qX-OT1" secondAttribute="trailing" constant="10" id="PUM-9U-Lgy"/>
                             <constraint firstItem="CPQ-Ps-rkH" firstAttribute="top" secondItem="7al-5J-gvZ" secondAttribute="bottom" constant="20" id="QhR-MF-uuU"/>
                             <constraint firstItem="pXN-qX-OT1" firstAttribute="centerY" secondItem="CPQ-Ps-rkH" secondAttribute="centerY" id="Qqq-LS-lIw"/>
-                            <constraint firstItem="7TL-SS-s2j" firstAttribute="top" secondItem="zg7-iu-dsa" secondAttribute="bottom" constant="20" id="UnH-Ex-xON"/>
                             <constraint firstAttribute="trailingMargin" secondItem="7TL-SS-s2j" secondAttribute="trailing" id="XVx-M2-PHc"/>
                             <constraint firstItem="DvT-aW-8JH" firstAttribute="top" secondItem="nzj-uG-IUg" secondAttribute="bottom" constant="20" id="Ybs-Ie-hfz"/>
                             <constraint firstItem="1EK-le-1AY" firstAttribute="leading" secondItem="yte-ei-IMu" secondAttribute="trailing" constant="10" id="Yl6-o9-lP2"/>
+                            <constraint firstItem="YHm-xp-fxY" firstAttribute="top" secondItem="zg7-iu-dsa" secondAttribute="bottom" constant="20" id="ZL1-50-vqD"/>
+                            <constraint firstAttribute="trailing" secondItem="YHm-xp-fxY" secondAttribute="trailing" constant="20" id="ZsH-Di-gP8"/>
                             <constraint firstItem="bGf-F1-PFo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="ewF-zX-w8a"/>
                             <constraint firstAttribute="trailingMargin" secondItem="piH-Yj-BqA" secondAttribute="trailing" constant="20" id="fRS-fA-LTF"/>
                             <constraint firstItem="YbG-bW-P0i" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="fao-oI-Svv"/>
                             <constraint firstItem="pXN-qX-OT1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="hop-ey-qlQ"/>
+                            <constraint firstItem="YHm-xp-fxY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="kEV-vC-vkU"/>
                             <constraint firstItem="YbG-bW-P0i" firstAttribute="centerY" secondItem="7al-5J-gvZ" secondAttribute="centerY" id="lSC-jB-JyE"/>
                             <constraint firstItem="J1f-ht-nRp" firstAttribute="centerY" secondItem="nzj-uG-IUg" secondAttribute="centerY" id="n0s-nj-pg9"/>
                             <constraint firstAttribute="trailing" secondItem="1EK-le-1AY" secondAttribute="trailing" constant="20" id="nQI-m5-G5e"/>
@@ -192,12 +209,13 @@
                         <outlet property="m_ssid" destination="nzj-uG-IUg" id="3ql-eF-qhP"/>
                         <outlet property="m_textView" destination="7TL-SS-s2j" id="b9H-y1-Ol6"/>
                         <outlet property="m_timeOut" destination="1EK-le-1AY" id="lN2-Qz-IBU"/>
+                        <outlet property="startAirKissButton" destination="zg7-iu-dsa" id="jie-eK-Tzu"/>
                         <outlet property="timerLabel" destination="piH-Yj-BqA" id="Fvq-iE-TdR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="160.80000000000001" y="27.436281859070466"/>
+            <point key="canvasLocation" x="159.42028985507247" y="26.90217391304348"/>
         </scene>
     </scenes>
 </document>

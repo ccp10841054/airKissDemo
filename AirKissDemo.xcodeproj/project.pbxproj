@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B22CF5B1228FB8A600A9033B /* FengAirkissEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = B22CF5AC228FB8A600A9033B /* FengAirkissEncoder.m */; };
+		B22CF5B2228FB8A600A9033B /* FengAirKiss.m in Sources */ = {isa = PBXBuildFile; fileRef = B22CF5B0228FB8A600A9033B /* FengAirKiss.m */; };
 		B25125E021B50486002D37AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B25125DF21B50486002D37AF /* AppDelegate.m */; };
 		B25125E321B50486002D37AF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B25125E221B50486002D37AF /* ViewController.m */; };
 		B25125E621B50486002D37AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B25125E421B50486002D37AF /* Main.storyboard */; };
@@ -15,7 +17,6 @@
 		B25125EE21B50487002D37AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B25125ED21B50487002D37AF /* main.m */; };
 		B25125F821B50487002D37AF /* AirKissDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B25125F721B50487002D37AF /* AirKissDemoTests.m */; };
 		B251260321B50487002D37AF /* AirKissDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B251260221B50487002D37AF /* AirKissDemoUITests.m */; };
-		B2C6F6BE21D4EC100044C4A1 /* iOS_LarkAirKiss_Public.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2C6F6BD21D4EC100044C4A1 /* iOS_LarkAirKiss_Public.framework */; };
 		B2C6F6C621D4EE700044C4A1 /* SunMBHubUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C6F6C021D4EE700044C4A1 /* SunMBHubUtils.m */; };
 		B2C6F6C721D4EE700044C4A1 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C6F6C121D4EE700044C4A1 /* MBProgressHUD.m */; };
 		B2C6F6C821D4EE700044C4A1 /* SunAlertUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C6F6C521D4EE700044C4A1 /* SunAlertUtils.m */; };
@@ -37,26 +38,17 @@
 			remoteGlobalIDString = B25125DA21B50486002D37AF;
 			remoteInfo = AirKissDemo;
 		};
-		B2C6F6CF21D4EFCE0044C4A1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B2C6F6C921D4EFCE0044C4A1 /* iOS_LarkAirKiss_Public.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = B27C414521C27A3000FB021E;
-			remoteInfo = iOS_LarkAirKiss_Public;
-		};
-		B2C6F6D121D4EFCE0044C4A1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B2C6F6C921D4EFCE0044C4A1 /* iOS_LarkAirKiss_Public.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = B27C414E21C27A3100FB021E;
-			remoteInfo = iOS_LarkAirKiss_Pubic;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0B0C691195A7006106AE1182 /* Pods-AirKissDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirKissDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AirKissDemo/Pods-AirKissDemo.release.xcconfig"; sourceTree = "<group>"; };
 		1727E621100D2550F1CAC844 /* Pods_AirKissDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AirKissDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		907E0FAA7961FC66AF92AD1D /* Pods-AirKissDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirKissDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AirKissDemo/Pods-AirKissDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		B22CF5AC228FB8A600A9033B /* FengAirkissEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FengAirkissEncoder.m; sourceTree = "<group>"; };
+		B22CF5AD228FB8A600A9033B /* FengAirKiss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FengAirKiss.h; sourceTree = "<group>"; };
+		B22CF5AE228FB8A600A9033B /* FengAirKissDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FengAirKissDefines.h; sourceTree = "<group>"; };
+		B22CF5AF228FB8A600A9033B /* FengAirkissEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FengAirkissEncoder.h; sourceTree = "<group>"; };
+		B22CF5B0228FB8A600A9033B /* FengAirKiss.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FengAirKiss.m; sourceTree = "<group>"; };
 		B25125DB21B50486002D37AF /* AirKissDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirKissDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B25125DE21B50486002D37AF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B25125DF21B50486002D37AF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -80,7 +72,6 @@
 		B2C6F6C321D4EE700044C4A1 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		B2C6F6C421D4EE700044C4A1 /* SunMBHubUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SunMBHubUtils.h; sourceTree = "<group>"; };
 		B2C6F6C521D4EE700044C4A1 /* SunAlertUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SunAlertUtils.m; sourceTree = "<group>"; };
-		B2C6F6C921D4EFCE0044C4A1 /* iOS_LarkAirKiss_Public.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = iOS_LarkAirKiss_Public.xcodeproj; path = ../sunSeaGit/iOS_SDK_New/iOS_LarkAirkiss_Public/iOS_LarkAirKiss_Public.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +79,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2C6F6BE21D4EC100044C4A1 /* iOS_LarkAirKiss_Public.framework in Frameworks */,
 				D37ECFFBA0C13AC8A04A9891 /* Pods_AirKissDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -119,10 +109,21 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B22CF5AB228FB8A600A9033B /* AirKiss */ = {
+			isa = PBXGroup;
+			children = (
+				B22CF5AD228FB8A600A9033B /* FengAirKiss.h */,
+				B22CF5B0228FB8A600A9033B /* FengAirKiss.m */,
+				B22CF5AE228FB8A600A9033B /* FengAirKissDefines.h */,
+				B22CF5AF228FB8A600A9033B /* FengAirkissEncoder.h */,
+				B22CF5AC228FB8A600A9033B /* FengAirkissEncoder.m */,
+			);
+			path = AirKiss;
+			sourceTree = "<group>";
+		};
 		B25125D221B50486002D37AF = {
 			isa = PBXGroup;
 			children = (
-				B2C6F6C921D4EFCE0044C4A1 /* iOS_LarkAirKiss_Public.xcodeproj */,
 				B25125DD21B50486002D37AF /* AirKissDemo */,
 				B25125F621B50487002D37AF /* AirKissDemoTests */,
 				B251260121B50487002D37AF /* AirKissDemoUITests */,
@@ -145,6 +146,7 @@
 		B25125DD21B50486002D37AF /* AirKissDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B22CF5AB228FB8A600A9033B /* AirKiss */,
 				B2C6F6BF21D4EE700044C4A1 /* common */,
 				B25125DE21B50486002D37AF /* AppDelegate.h */,
 				B25125DF21B50486002D37AF /* AppDelegate.m */,
@@ -188,15 +190,6 @@
 				B2C6F6C521D4EE700044C4A1 /* SunAlertUtils.m */,
 			);
 			path = common;
-			sourceTree = "<group>";
-		};
-		B2C6F6CA21D4EFCE0044C4A1 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B2C6F6D021D4EFCE0044C4A1 /* iOS_LarkAirKiss_Public.framework */,
-				B2C6F6D221D4EFCE0044C4A1 /* iOS_LarkAirKiss_Pubic.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		E6C88E283FD736F23341090A /* Frameworks */ = {
@@ -299,12 +292,6 @@
 			mainGroup = B25125D221B50486002D37AF;
 			productRefGroup = B25125DC21B50486002D37AF /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = B2C6F6CA21D4EFCE0044C4A1 /* Products */;
-					ProjectRef = B2C6F6C921D4EFCE0044C4A1 /* iOS_LarkAirKiss_Public.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				B25125DA21B50486002D37AF /* AirKissDemo */,
@@ -313,23 +300,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		B2C6F6D021D4EFCE0044C4A1 /* iOS_LarkAirKiss_Public.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = iOS_LarkAirKiss_Public.framework;
-			remoteRef = B2C6F6CF21D4EFCE0044C4A1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		B2C6F6D221D4EFCE0044C4A1 /* iOS_LarkAirKiss_Pubic.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = iOS_LarkAirKiss_Pubic.xctest;
-			remoteRef = B2C6F6D121D4EFCE0044C4A1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B25125D921B50486002D37AF /* Resources */ = {
@@ -412,9 +382,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B22CF5B2228FB8A600A9033B /* FengAirKiss.m in Sources */,
 				B25125E321B50486002D37AF /* ViewController.m in Sources */,
 				B25125EE21B50487002D37AF /* main.m in Sources */,
 				B2C6F6C721D4EE700044C4A1 /* MBProgressHUD.m in Sources */,
+				B22CF5B1228FB8A600A9033B /* FengAirkissEncoder.m in Sources */,
 				B25125E021B50486002D37AF /* AppDelegate.m in Sources */,
 				B2C6F6C621D4EE700044C4A1 /* SunMBHubUtils.m in Sources */,
 				B2C6F6C821D4EE700044C4A1 /* SunAlertUtils.m in Sources */,
@@ -523,7 +495,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -576,7 +548,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -589,8 +561,9 @@
 			baseConfigurationReference = 907E0FAA7961FC66AF92AD1D /* Pods-AirKissDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = PXA5T5Y65C;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VPQ7HPC779;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -606,7 +579,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.SunseaIot.SunseaAyla;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = LGHDEV;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -616,8 +589,9 @@
 			baseConfigurationReference = 0B0C691195A7006106AE1182 /* Pods-AirKissDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = PXA5T5Y65C;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VPQ7HPC779;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -633,7 +607,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.SunseaIot.SunseaAyla;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = LGHDEV;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

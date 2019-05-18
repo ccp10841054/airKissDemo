@@ -9,15 +9,17 @@
 #import "ViewController.h"
 #import "SunMBHubUtils.h"
 #import "SunAlertUtils.h"
-#import <iOS_LarkAirKiss_Public/LarkAirKiss.h>
+#import "FengAirKiss.h"
 
-@interface ViewController ()<LarkAirKissDelegate,UITextFieldDelegate>{
+
+@interface ViewController ()<FengAirKissDelegate,UITextFieldDelegate>{
     NSTimer *m_timer;//超时定时器
     NSInteger timerCount;
 
 }
+@property (weak, nonatomic) IBOutlet UIButton *startAirKissButton;
 
-@property(strong,nonatomic)LarkAirKiss *airKiss;
+@property(strong,nonatomic)FengAirKiss *airKiss;
 
 @property (weak, nonatomic) IBOutlet UILabel *timerLabel;
 
@@ -41,19 +43,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-
-    self.m_ssid.text = @"sunseagroup";
-    self.m_psk.text = @"sunsea888";
+    
+    self.m_ssid.text = @"helloword";
+    self.m_psk.text = @"csy10841054";
+    
     self.m_packet_interval.text = @"5";
     self.m_SNAP_InterVal.text = @"100";
-    self.m_timeOut.text = @"30000";
+    self.m_timeOut.text = @"60000";
     m_timer = [NSTimer scheduledTimerWithTimeInterval:0.001 target:self selector:@selector(timerAction:) userInfo:nil repeats:YES];
     [m_timer setFireDate:[NSDate distantFuture]];
 }
 
--(LarkAirKiss *)airKiss {
+-(FengAirKiss *)airKiss {
     if (!_airKiss) {
-        _airKiss = [[LarkAirKiss alloc] init];
+        _airKiss = [[FengAirKiss alloc] init];
         _airKiss.delegate = self;
     }
     return _airKiss;
@@ -99,34 +102,48 @@
     timerCount = 0;
     [m_timer setFireDate:[NSDate distantPast]];
 
-    [SunMBHubUtils showLoading];
-    [self.airKiss start:self.m_ssid.text psk:self.m_psk.text token:@""];
+//    [SunMBHubUtils showLoading];
+    self.startAirKissButton.enabled = NO;
+    [self.airKiss start:self.m_ssid.text psk:self.m_psk.text];
 }
 
--(void)LarkAirKiss:(id)sender dsn:(NSString *)dsn token:(NSString *)setUpToken{
-    NSLog(@"airKiss dsn = %@ setUpToken = %@",dsn,setUpToken);
+- (IBAction)stopAirKiss:(id)sender {
+    if (self.airKiss) {
+        [self.airKiss stop];
+        [m_timer setFireDate:[NSDate distantFuture]];
+        self.m_textView.text = @"cancel airKiss";
+    }
+    self.startAirKissButton.enabled = YES;
+}
+
+-(void)FengAirKissFinish:(id)sender dsn:(NSString *)dsn token:(NSString *)setUpToken{
+    NSLog(@"airKiss Finish dsn = %@ setUpToken = %@",dsn,setUpToken);
     self.m_textView.text = [NSString stringWithFormat:@"DSN:%@\n\nsetUpToken:%@",dsn,setUpToken];
-}
-
--(void)LarkAirKissFinish:(id)sender{
-    NSLog(@"airKiss Finish");
+    
     [SunAlertUtils showAlert:@"airKiss Finish" message:@"" sureTitle:@"确定" completionBlock:^(UIAlertAction * _Nonnull action, NSInteger buttonIndex) {
         
     } parentVc:self];
     [m_timer setFireDate:[NSDate distantFuture]];
     [SunMBHubUtils hiddenLoading];
     [self.airKiss stop];
+    self.startAirKissButton.enabled = YES;
 }
 
--(void)LarkAirKissError:(id)sender type:(int)type message:(NSString *)error{
-    NSLog(@"airKiss error type :%d content:%@",type,error);
-    [SunAlertUtils showAlert:[NSString stringWithFormat:@"airKiss error type :%d content:%@",type,error] message:@"" sureTitle:@"确定" completionBlock:^(UIAlertAction * _Nonnull action, NSInteger buttonIndex) {
+-(void)FengAirKissError:(id)sender message:(NSString *)error{
+    NSLog(@"airKiss error content:%@",error);
+    [SunAlertUtils showAlert:[NSString stringWithFormat:@"airKiss error content:%@",error] message:@"" sureTitle:@"确定" completionBlock:^(UIAlertAction * _Nonnull action, NSInteger buttonIndex) {
         
     } parentVc:self];
     [m_timer setFireDate:[NSDate distantFuture]];
     [SunMBHubUtils hiddenLoading];
     [self.airKiss stop];
     self.m_textView.text = error;
+    self.startAirKissButton.enabled = YES;
+}
+
+#pragma mark --键盘消失
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    return [textField resignFirstResponder];
 }
 
 @end
